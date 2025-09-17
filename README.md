@@ -33,7 +33,8 @@ sudo vim /etc/hosts
 ```bash
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/###\1/g' /etc/fstab
-sudo sed -i '/swap/s/^/###/' /etc/fstab
+
+or comment swap on /etc/fstab using vim
 free -h  ### Verify swap is 0B
 ```
 
